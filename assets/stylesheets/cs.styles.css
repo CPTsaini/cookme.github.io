@@ -144,7 +144,8 @@ Misc font 2: 'Helvetica Neue'
 
 -------------------------------------------------------------------*/
 
-.fa-facebook {
+
+/* .fa-facebook {
     color: #284c9c
 }
 
@@ -158,7 +159,7 @@ Misc font 2: 'Helvetica Neue'
 
 .fa-google-plus {
     color: #e04b34
-}
+} */
 
 ._btn {
     border-style: solid;
@@ -20807,17 +20808,20 @@ footer section.footer-information-block .footer-information-content>div {
     position: static
 }
 
-footer section.footer-information-block .footer-information-content>div:first-child {
-    padding-top: 153px
+.social-icons a {
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
 }
+
+footer section.footer-information-block .footer-information-content>div:first-child {}
 
 footer section.footer-information-block .footer-information-content .logo-footer {
     display: inline-block;
     *display: inline;
     zoom: 1;
-    position: absolute;
-    top: 0;
-    left: 15px;
     max-height: 118px;
     max-width: 113px
 }
