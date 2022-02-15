@@ -23377,6 +23377,9 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
         display: flex;
         margin-left: 20px;
     }
+	   .heading_p {
+        font-size: 14px;
+    }
 }
 
 
