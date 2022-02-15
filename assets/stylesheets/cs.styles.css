@@ -636,6 +636,7 @@ body .product-detail-content .detail-content #product-information .purchase-sect
     list-style: none;
     display: flex;
     margin-left: 37rem;
+    flex-wrap: wrap;
 }
 
 .info ul li {
@@ -3855,6 +3856,10 @@ body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-containe
 body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-container-1 .sub-mega-menu-wrapper {
     margin-left: -15px;
     margin-right: -15px
+}
+
+.cart-btn {
+    display: none;
 }
 
 body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-container-1 .sub-mega-menu {
@@ -9288,7 +9293,11 @@ body.index-template section.home-slideshow-layout .slideshow-caption.position-mi
 }
 
 body.index-template section.home-slideshow-layout .slideshow-caption.position-middle .group {
-    margin-bottom: 25%
+    margin-bottom: 25%;
+}
+
+body.index-template .desc {
+    margin-left: 20%;
 }
 
 body.index-template section.home-slideshow-layout .current-sr-slide-visible .slideshow-caption {
@@ -9614,7 +9623,9 @@ body.index-template section.home-welcome-layout img {
 
 @media only screen and (max-width: 425px) {
     body.index-template section.home-welcome-layout .welcome-caption {
-        font-size: 14px
+        font-size: 14px;
+        width: 100% !important;
+        padding: 10px !important;
     }
 }
 
@@ -23250,8 +23261,125 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
         padding-right: 15px;
         margin-top: 0
     }
+    .info {
+        text-align: center;
+    }
+    .info ul {
+        margin-left: 0;
+        font-size: 11px;
+    }
+    .info ul li {
+        padding: 10px;
+    }
+    .info ul .login {
+        margin-left: 87px;
+    }
+    .info .line {
+        width: 90%;
+        margin-top: -27px;
+        margin-left: 0;
+    }
+    .info .infoimg {
+        margin-left: 36px;
+        width: 21rem;
+        margin-top: -22px;
+    }
+    .info .infoimg span {
+        margin-top: 27px;
+    }
+    body.index-template .page-title {
+        margin-bottom: 10px;
+        font-size: 40px;
+        line-height: 1em;
+    }
+    body.index-template .page-title-2 {
+        font-size: 20px;
+        line-height: 1em;
+        margin-top: 10px;
+    }
+    body.index-template .page-desc {
+        font-size: 10px;
+        width: 25rem;
+        margin-top: 5px;
+    }
+    body.index-template .desc {
+        margin-left: 5%;
+    }
+    body.index-template ._btn_ {
+        height: 22px;
+        width: 70px;
+        padding: 7px;
+        font-size: 8px;
+    }
+    .home-welcome-content {
+        display: block !important;
+    }
+    .home-welcome-content .welcome-caption {
+        width: 100%;
+    }
+    .product-image {
+        height: 10rem;
+        width: 10rem;
+    }
+    .product-info {
+        margin-left: -1.5rem;
+    }
+    .product-info h2 {
+        font-size: 30px !important;
+        width: 13rem;
+    }
+    .product-container {
+        padding: 0 0;
+    }
+    .product-card {
+        margin-right: 0;
+        width: 140px;
+        height: 170px;
+    }
+    .pre-btn,
+    .nxt-btn {
+        width: 7vw;
+        top: -10px;
+    }
+    .product {
+        display: flex;
+        width: 35rem;
+    }
+    .product .hoverBorderWrapper {
+        width: 20rem;
+    }
+    .product .hoverBorderWrapper img {
+        width: 14rem !important;
+        height: 18rem;
+    }
+    .product .row-right {
+        width: 20rem;
+    }
+    body.index-template section.home-product-layout .home-product-content {
+        display: block;
+    }
+    .cart-btn {
+        display: block;
+        height: 5rem;
+        width: 11rem;
+        padding: -24px;
+        margin-top: 2rem;
+        color: red;
+        background-color: white;
+        border: 2px solid red;
+    }
+    .footer ul li {
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .flex_div {
+        display: flex;
+        margin-left: 20px;
+    }
 }
 
+
+}
 .ajax-cart-loading {
     text-align: center
 }
