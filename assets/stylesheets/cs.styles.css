@@ -653,13 +653,11 @@ body .product-detail-content .detail-content #product-information .purchase-sect
 
 .info .line {
     width: 40%;
-    margin-left: 46rem;
     margin-top: -27px;
 }
 
 .info .infoimg {
     width: 37rem;
-    margin-left: 57rem;
     margin-bottom: 2rem;
     display: flex;
 }
@@ -3859,7 +3857,21 @@ body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-containe
 }
 
 .cart-btn {
-    display: none;
+    border: 2px solid red !important;
+    background-color: white;
+    color: red;
+    height: 4rem;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.quantity {
+    padding: 10px;
+    color: red;
+}
+
+.quantity a {
+    color: red;
 }
 
 body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-container-1 .sub-mega-menu {
@@ -23347,7 +23359,7 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     .product .hoverBorderWrapper {
         width: 20rem;
-	    margin-left: -30px;
+        margin-left: -30px;
     }
     .product .hoverBorderWrapper img {
         width: 14rem !important;
@@ -23377,7 +23389,7 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
         display: flex;
         margin-left: 20px;
     }
-	   .heading_p {
+    .heading_p {
         font-size: 14px;
     }
 }
