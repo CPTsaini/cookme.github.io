@@ -765,76 +765,79 @@
             </div>
 
             <!-- category slider -->
-            <section class="product">
-                <button class="pre-btn"><img src="assets/images/down copy 3.png" alt=""></button>
-                <button class="nxt-btn"><img src="assets/images/down copy 3.png" alt=""></button>
-                <div class="product-container">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/slide.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="page-title" style="font-size: 50px;">New Arrivals</h2>
 
-                        </div>
+
+            <div class="thumbnail-slider">
+                <div class="thumbnail-container">
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
+
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/slide.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="page-title" style="font-size: 50px;">Combo Offers</h2>
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
 
-                        </div>
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/slide.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="page-title" style="font-size: 50px;">Blended Spices</h2>
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
 
-                        </div>
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/slide.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="page-title" style="font-size: 50px;">Curry Paste</h2>
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
 
-                        </div>
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/slide.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="page-title" style="font-size: 50px;">New Arrivals</h2>
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
 
-                        </div>
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/slide.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="page-title" style="font-size: 50px;">Blended Spices</h2>
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
 
-                        </div>
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/slide.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="page-title" style="font-size: 50px;">Combo Offers</h2>
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
 
-                        </div>
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
+                    </div>
+                    <div class="item">
+                        <center>
+                            <div class="image"><img src="assets/images/—Pngtree—spices_5637228.png" alt=""></div>
+
+                            <div class="name page-title">lorem ipsum</div>
+                        </center>
                     </div>
 
                 </div>
-            </section>
+
+                <!-- controls slides -->
+                <div class="controls">
+                    <ul>
+                        <li id="1" onclick="controlSlides(this)" class="active">
+                            <</li>
+                                <li id="2" onclick="controlSlides(this)" class="">></li>
+                    </ul>
+                </div>
+
+            </div>
             <!-- category slider end -->
 
 
@@ -1811,7 +1814,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div id="shopify-section-theme-footer" class="shopify-section">
-            <section class="footer-information-block clearfix" style="background-image:  url(./assets/images/BOTTOM2.png);">
+            <section class="footer-information-block clearfix" style="background-image:  url(./assets/images/bg-newsletter.jpg); background-size: cover;">
                 <div class="container">
                     <div class="row">
                         <div class="footer-information-inner">
@@ -2246,22 +2249,104 @@
 
 
     <script>
-        const productContainers = [...document.querySelectorAll('.product-container')];
-        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-        const preBtn = [...document.querySelectorAll('.pre-btn')];
+        const controls = document.querySelector(".controls");
+        const container = document.querySelector(".thumbnail-container");
+        const allBox = container.children;
+        const containerWidth = container.offsetWidth;
+        const margin = 30;
+        var items = 0;
+        var totalItems = 0;
+        var jumpSlideWidth = 0;
 
-        productContainers.forEach((item, i) => {
-            let containerDimensions = item.getBoundingClientRect();
-            let containerWidth = containerDimensions.width;
 
-            nxtBtn[i].addEventListener('click', () => {
-                item.scrollLeft += containerWidth;
-            })
+        // item setup per slide
 
-            preBtn[i].addEventListener('click', () => {
-                item.scrollLeft -= containerWidth;
-            })
-        })
+        responsive = [{
+                breakPoint: {
+                    width: 0,
+                    item: 1
+                }
+            }, //if width greater than 0 (1 item will show) 
+            {
+                breakPoint: {
+                    width: 600,
+                    item: 2
+                }
+            }, //if width greater than 600 (2  item will show) 
+            {
+                breakPoint: {
+                    width: 1000,
+                    item: 5
+                }
+            } //if width greater than 1000 (4 item will show) 
+        ]
+
+        function load() {
+            for (let i = 0; i < responsive.length; i++) {
+                if (window.innerWidth > responsive[i].breakPoint.width) {
+                    items = responsive[i].breakPoint.item
+                }
+            }
+            start();
+        }
+
+        function start() {
+            var totalItemsWidth = 0
+            for (let i = 0; i < allBox.length; i++) {
+                // width and margin setup of items
+                allBox[i].style.width = (containerWidth / items) - margin + "px";
+                allBox[i].style.margin = (margin / 2) + "px";
+                totalItemsWidth += containerWidth / items;
+                totalItems++;
+            }
+
+            // thumbnail-container width set up
+            container.style.width = totalItemsWidth + "px";
+
+            // slides controls number set up
+            const allSlides = Math.ceil(totalItems / items);
+            const ul = document.createElement("ul");
+            for (let i = 1; i <= allSlides; i++) {
+                const li = document.createElement("li");
+                li.id = i;
+                // li.innerHTML = i;
+                li.setAttribute("onclick", "controlSlides(this)");
+                ul.appendChild(li);
+                if (i == 1) {
+                    li.className = "active";
+                }
+            }
+            controls.appendChild(ul);
+        }
+
+        // when click on numbers slide to next slide
+        function controlSlides(ele) {
+            // select controls children  'ul' element 
+            const ul = controls.children;
+
+            // select ul children 'li' elements;
+            const li = ul[0].children
+
+
+            var active;
+
+            for (let i = 0; i < li.length; i++) {
+                if (li[i].className == "active") {
+                    // find who is now active
+                    active = i;
+                    // remove active class from all 'li' elements
+                    li[i].className = "";
+                }
+            }
+            // add active class to current slide
+            ele.className = "active";
+
+            var numb = (ele.id - 1) - active;
+            jumpSlideWidth = jumpSlideWidth + (containerWidth * numb);
+            container.style.marginLeft = -jumpSlideWidth + "px";
+        }
+
+        window.onload = load();
     </script>
 
 </body>
