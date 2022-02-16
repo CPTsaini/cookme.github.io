@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Pacifico&family=Poppins:wght@200&family=Satisfy&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400&family=Pacifico&family=Poppins:wght@200&family=Sail&family=Satisfy&family=Yellowtail&display=swap');
+
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
@@ -161,6 +164,14 @@ Misc font 2: 'Helvetica Neue'
     color: #e04b34
 } */
 
+button {
+    border-radius: 6px;
+}
+
+.navigation-links>li>a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 ._btn {
     border-style: solid;
     text-decoration: none;
@@ -199,6 +210,13 @@ Misc font 2: 'Helvetica Neue'
     border-color: #fff;
     background-color: #ffc03f;
     font-family: Josefin Sans
+}
+
+.price .money {
+    color: #241105 !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+    font-weight: 300px !important;
 }
 
 ._btn[disabled] {
@@ -665,6 +683,35 @@ body .product-detail-content .detail-content #product-information .purchase-sect
 .info .infoimg span {
     margin-top: 50px;
     color: #9c1919;
+}
+
+.on_hover {
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    height: auto;
+    background-color: grey;
+    z-index: 1;
+    display: none;
+}
+
+.on_hover .hover_product {
+    display: flex;
+    padding: 2rem;
+}
+
+.on_hover .hover_product img {
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem;
+}
+
+.on_hover .hover_product .desc {
+    text-align: left;
+}
+
+.thumbnail-slider .thumbnail-container .item:hover+.on_hover {
+    display: block;
 }
 
 @-moz-keyframes pro_frame2 {
@@ -1420,8 +1467,10 @@ body .rte-setting:last-child {
 }
 
 body p {
-    color: #444;
-    margin: 0 0 19.44444px
+    color: black;
+    margin: 0 0 19.44444px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 body ul,
@@ -1893,8 +1942,11 @@ body .dropdown-menu {
 /* category-slider */
 
 .thumbnail-slider {
-    width: 100%;
+    width: 72%;
     overflow: hidden;
+    margin-left: 22rem;
+    margin-top: -10rem;
+    margin-bottom: 10rem;
 }
 
 .thumbnail-slider .thumbnail-container {
@@ -1905,26 +1957,26 @@ body .dropdown-menu {
 
 .thumbnail-slider .item {
     height: 20rem;
-    width: 20rem !important;
+    width: 24rem !important;
     text-align: center;
     float: left;
 }
 
 .thumbnail-slider .item .image {
-    height: 20rem;
-    width: 20rem;
+    height: 23rem;
+    width: 23rem;
     border-radius: 50%;
-    background-color: grey;
 }
 
 .thumbnail-slider .item .image img {
-    height: 20rem;
-    width: 20rem;
+    height: 23rem;
+    width: 23rem;
     border-radius: 50%;
 }
 
 .thumbnail-slider .item .name {
     font-size: 45px;
+    width: 15rem;
 }
 
 .thumbnail-slider .controls {
@@ -3504,7 +3556,6 @@ body:not(.index-template) main section.blog-content .article .group-blog-top .ar
 .m_cart-group .items-cart .num-items-in-cart * {
     color: #fff;
     white-space: nowrap;
-    text-transform: uppercase
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3733,7 +3784,6 @@ body .navigation-links>li>a {
     *display: inline;
     zoom: 1;
     font-family: Josefin Sans;
-    text-transform: uppercase;
     color: #fff;
     font-size: 16px;
     padding-top: 10px;
@@ -3928,6 +3978,19 @@ body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-containe
     padding: 20px;
     font-size: 12px;
 }
+
+.card-btn .hoveer {
+    display: none;
+}
+
+.cart-btn:hover .cartt {
+    display: none;
+}
+
+
+/* .cart-btn:hover .hove {
+    display: block;
+} */
 
 .quantity {
     padding: 10px;
@@ -6719,8 +6782,7 @@ body .compare-model .modal-body .modal-note * {
 }
 
 .product .product-price {
-    font-weight: 500;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     background-color: transparent
 }
 
@@ -6751,10 +6813,10 @@ body .compare-model .modal-body .modal-note * {
     transition: all 500ms ease;
     line-height: 1.5em;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600 !important;
     font-size: 30px;
-    color: #000;
-    font-family: Playball
+    color: #42200B;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .product .product-title a:focus,
@@ -7180,7 +7242,7 @@ body .compare-model .modal-body .modal-note * {
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
     position: relative;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     display: block;
     font-size: 22px;
     width: 100%;
@@ -7584,7 +7646,7 @@ body .compare-model .modal-body .modal-note * {
     color: #444;
     padding: 0;
     margin-top: 20px;
-    font-family: Playball
+    font-family: 'Sail', cursive
 }
 
 .m_search .m_dropdown-search .search-results .thumbnail {
@@ -7883,7 +7945,7 @@ body .compare-model .modal-body .modal-note * {
         color: #444;
         padding: 0;
         margin-top: 20px;
-        font-family: Playball
+        font-family: 'Sail', cursive
     }
     .m_search .m_dropdown-search .search-results .thumbnail {
         border-radius: 5px;
@@ -8871,7 +8933,7 @@ body.index-template .page-title {
     text-align: center;
     margin-bottom: 45px;
     font-size: 72px;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     line-height: 1em;
     color: #9c1919
 }
@@ -8879,7 +8941,7 @@ body.index-template .page-title {
 body.index-template .page-title-2 {
     text-align: left;
     font-size: 50px;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     line-height: 1em;
     color: #000
 }
@@ -9009,7 +9071,6 @@ body.index-template ._btn_ {
 }
 
 .price {
-    font-weight: 900;
     font-size: 20px;
 }
 
@@ -9747,7 +9808,7 @@ body.index-template section.home-product-layout .banner-product-title .title-con
 body.index-template section.home-product-layout .banner-product-title .title-content * {
     font-size: 60px;
     color: #f3eade;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     margin: 0 auto
 }
 
@@ -9896,7 +9957,7 @@ body.index-template section.home-banner-layout .home-banner-content .banner-capt
     line-height: 1em;
     text-transform: capitalize;
     font-size: 60px;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     font-weight: 500
 }
 
@@ -10337,7 +10398,7 @@ body:not(.index-template) main section.search-content .search-field .search-resu
     color: #444;
     padding: 0;
     margin-top: 20px;
-    font-family: Playball
+    font-family: 'Sail', cursive
 }
 
 body:not(.index-template) main section.search-content .search-field .search-results .thumbnail {
@@ -12818,7 +12879,7 @@ body:not(.index-template) main section.article-content .related-body .sub-title 
     font-weight: 500;
     font-size: 36px;
     color: #000;
-    font-family: Playball
+    font-family: 'Sail', cursive
 }
 
 body:not(.index-template) main section.article-content .related-body .related-content {
@@ -16149,7 +16210,7 @@ body:not(.index-template) .shortcodes-content .font-layout .font-lato {
 }
 
 body:not(.index-template) .shortcodes-content .font-layout .font-rozha {
-    font-family: Playball
+    font-family: 'Sail', cursive
 }
 
 body:not(.index-template) .shortcodes-content .font-layout .font-pacifico {
@@ -18312,7 +18373,7 @@ body .modal.quick-shop .modal-dialog .modal-content .product-information {
 
 body .modal.quick-shop .modal-dialog .modal-content .product-information .title {
     margin-top: 0;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     text-transform: capitalize;
     color: #000;
     font-weight: 600;
@@ -18323,7 +18384,7 @@ body .modal.quick-shop .modal-dialog .modal-content .product-information .title 
 
 body .modal.quick-shop .modal-dialog .modal-content .product-information .title * {
     margin-top: 0;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     text-transform: capitalize;
     color: #000;
     font-weight: 600;
@@ -18353,7 +18414,7 @@ body .modal.quick-shop .modal-dialog .modal-content .product-information .produc
 
 body .modal.quick-shop .modal-dialog .modal-content .product-information .product-price .money {
     color: #8d785b;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     font-weight: 600;
     font-size: 32px
 }
@@ -18976,7 +19037,7 @@ body .product-detail-content .detail-content #product-information {
 
 body .product-detail-content .detail-content #product-information .title {
     margin-top: 0;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     text-transform: capitalize;
     color: #000;
     font-weight: 600;
@@ -18987,7 +19048,7 @@ body .product-detail-content .detail-content #product-information .title {
 
 body .product-detail-content .detail-content #product-information .title * {
     margin-top: 0;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     text-transform: capitalize;
     color: #000;
     font-weight: 600;
@@ -19017,7 +19078,7 @@ body .product-detail-content .detail-content #product-information .product-price
 
 body .product-detail-content .detail-content #product-information .product-price .money {
     color: #8d785b;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     font-weight: 600;
     font-size: 32px
 }
@@ -19778,7 +19839,7 @@ body .may-like-products .sub-title * {
     font-weight: 500;
     font-size: 36px;
     color: #000;
-    font-family: Playball
+    font-family: 'Sail', cursive
 }
 
 body .may-like-products .content_product {
@@ -19842,7 +19903,7 @@ body .related-products .sub-title * {
     font-weight: 500;
     font-size: 36px;
     color: #000;
-    font-family: Playball
+    font-family: 'Sail', cursive
 }
 
 body .related-products .owl-next,
@@ -20861,7 +20922,7 @@ footer a:hover {
 footer section.footer-information-block .footer-title {
     color: #fff;
     font-size: 24px;
-    font-family: Playball;
+    font-family: 'Sail', cursive;
     margin-bottom: 37px
 }
 
@@ -22251,7 +22312,7 @@ body #lightbox-search .search-results .title {
     color: #444;
     padding: 0;
     margin-top: 20px;
-    font-family: Playball
+    font-family: 'Sail', cursive
 }
 
 body #lightbox-search .search-results .thumbnail {
@@ -23365,13 +23426,24 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     body.index-template .page-title {
         margin-bottom: 10px;
-        font-size: 40px;
+        font-size: 40px !important;
         line-height: 1em;
     }
     body.index-template .page-title-2 {
         font-size: 20px;
         line-height: 1em;
         margin-top: 10px;
+    }
+    .thumbnail-slider {
+        margin-left: -4rem !important;
+        width: 100;
+        margin-bottom: 5px;
+    }
+    .thumbnail-slider .thumbnail-container {
+        margin-left: 3rem;
+    }
+    .welcome-banner {
+        width: 100% !important;
     }
     body.index-template .page-desc {
         font-size: 10px;
@@ -23465,6 +23537,11 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     .row-right {
         text-align: left;
+    }
+    .thumbnail-slider {
+        width: 100%;
+        overflow: hidden;
+        margin-left: 0rem;
     }
     .thumbnail-slider .item {
         width: 15rem !important;
