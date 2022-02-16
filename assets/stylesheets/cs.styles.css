@@ -23441,6 +23441,7 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     .thumbnail-slider .thumbnail-container {
         margin-left: 3rem;
+        margin-top: 8rem;
     }
     .welcome-banner {
         width: 100% !important;
@@ -23556,24 +23557,19 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
         height: 13rem;
         width: 13rem;
     }
-    /* .thumbnail-slider .left-btn {
-        position: absolute;
-        top: 81rem;
-        left: 0rem;
+    /* .thumbnail-slider .controls ul #1 {
+        top: 81rem !important;
+        left: 0rem !important;
     }
-    .thumbnail-slider .right-btn {
-        position: absolute;
-        top: 81rem;
-        left: 32rem;
-    
+    .thumbnail-slider .controls ul #2 {
+        top: 81rem !important;
+        left: 3rem !important;
     } */
     .thumbnail-slider .controls {
         display: none;
     }
 }
 
-
-}
 .ajax-cart-loading {
     text-align: center
 }
