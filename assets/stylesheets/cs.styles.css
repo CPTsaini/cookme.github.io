@@ -1846,8 +1846,14 @@ html * {
     -moz-osx-font-smoothing: grayscale
 }
 
-body {
+
+/* body {
     background-image: url(../../assets/images/new/background.png);
+} */
+
+body,
+html {
+    background-color: #f3ebdc;
 }
 
 body {
