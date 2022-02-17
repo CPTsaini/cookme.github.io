@@ -23568,6 +23568,9 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     .thumbnail-slider .controls {
         display: none;
     }
+	    .home-slideshow-content {
+        height: 230px !important;
+    }
 }
 
 .ajax-cart-loading {
