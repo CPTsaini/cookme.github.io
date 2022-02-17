@@ -23710,6 +23710,9 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     .home-slideshow-content {
         height: 230px !important;
     }
+	    .infoimg .estore {
+        margin-top: 25px;
+    }
 }
 
 .ajax-cart-loading {
