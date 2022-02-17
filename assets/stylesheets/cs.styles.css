@@ -1847,12 +1847,7 @@ html * {
 }
 
 body {
-    /* background-image: url(../../assets/images/body_bg.png) */
-}
-
-body,
-html {
-    background-color: white;
+    background-image: url(../../assets/images/new/background.png);
 }
 
 body {
@@ -23710,7 +23705,7 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     .home-slideshow-content {
         height: 230px !important;
     }
-	    .infoimg .estore {
+    .infoimg .estore {
         margin-top: 25px;
     }
 }
