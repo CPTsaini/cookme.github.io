@@ -215,9 +215,9 @@ button {
 
 .price .money {
     color: #241105 !important;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 125%;
-    font-weight: 300px !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600px !important;
 }
 
 ._btn[disabled] {
@@ -654,7 +654,7 @@ body .product-detail-content .detail-content #product-information .purchase-sect
 .info ul {
     list-style: none;
     display: flex;
-    margin-left: 37rem;
+    margin-left: 31rem;
     flex-wrap: wrap;
 }
 
@@ -663,7 +663,7 @@ body .product-detail-content .detail-content #product-information .purchase-sect
 }
 
 .info ul li a {
-    color: #9c1919;
+    color: #524f4f;
 }
 
 .info ul li img {
@@ -1825,7 +1825,8 @@ html * {
 
 body,
 html {
-    background-color: #f3ebdc;
+    /* background-image: url(../images/background_2.png);
+    background-size: cover; */
 }
 
 body {
@@ -3380,6 +3381,21 @@ body:not(.index-template) main section.blog-content .article .group-blog-top .ar
     align-items: flex-start
 }
 
+.buttn {
+    width: 140px;
+    height: 40px;
+}
+
+.btn button {
+    background-color: transparent;
+}
+
+.minusbtn,
+.plusbtn {
+    display: none;
+    font-size: 2rem;
+}
+
 .cart-info .cart-content>.items .group_cart_item+.group_cart_item {
     border-top: 1px solid #dbcebd
 }
@@ -4060,6 +4076,14 @@ body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-containe
     font-size: 12px;
 }
 
+.hover_btn {
+    display: none;
+}
+
+.cart-btn:hover+.hover_btn {
+    display: block;
+}
+
 .card-btn .hoveer {
     display: none;
 }
@@ -4182,6 +4206,12 @@ body .navigation-links .dropdown.mega-menu .megamenu-container.megamenu-containe
     body .navigation-links>li>.dropdown-menu {
         margin-top: 0px
     }
+}
+
+.PNG img {
+    position: absolute;
+    width: 24rem;
+    left: 4rem;
 }
 
 body ul.navigation_links_mobile {
@@ -4373,18 +4403,18 @@ body ul.navigation_links_mobile>li.navigation .menu-mobile-container:not(.sub-me
 }
 
 .hove {
-    height: 0;
-    width: 0;
     position: absolute;
     background-color: #9d1414;
     z-index: 1;
     border-radius: 20px;
     left: 24%;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .slider_product-card:hover+.hove {
-    display: block;
+    opacity: 1;
+    visibility: visible;
     width: auto;
     height: auto;
 }
@@ -6851,6 +6881,10 @@ body .compare-model .modal-body .modal-note * {
     display: none
 }
 
+.flex_divs {
+    margin-left: 5rem;
+}
+
 .product .hover-mask {
     -ms-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -7141,7 +7175,8 @@ body .compare-model .modal-body .modal-note * {
         padding-top: 10px
     }
     .product .rating-star {
-        margin-bottom: 5px
+        margin-bottom: 5px;
+        margin-left: 0;
     }
     .product .product-price .price,
     .product .product-price .price_sale {
@@ -9077,8 +9112,10 @@ body.index-template .page-title-2 {
 
 body.index-template .page-desc {
     text-align: left !important;
-    line-height: 1em;
+    line-height: 1.2em;
     color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
 body.index-template ._btn_ {
@@ -9964,7 +10001,7 @@ body.index-template section.home-product-layout .home-product-content {
 }
 
 body.index-template section.home-product-layout .heading_p {
-    padding: 0 12rem 0 12rem;
+    padding: 0 14rem 0 14rem;
     margin-top: -3rem;
 }
 
@@ -23590,16 +23627,18 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     .info ul .login {
         margin-left: 87px;
+        margin-top: -13px;
     }
     .info .line {
         width: 90%;
-        margin-top: -27px;
+        margin-top: -38px;
         margin-left: 0;
     }
     .infoimg {
         margin-left: 36px;
         width: 21rem;
-        margin-top: -22px;
+        margin-top: -27px;
+        margin-bottom: 3px;
     }
     .infoimg span {
         margin-top: 27px;
@@ -23631,7 +23670,7 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
         width: 100% !important;
     }
     body.index-template .page-desc {
-        font-size: 11px !important;
+        font-size: 9px !important;
         width: 25rem !important;
         margin-top: 9px !important;
     }
@@ -23690,6 +23729,7 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     .product .row-right {
         width: 20rem;
+        text-align: left;
     }
     .slider_product {
         padding: 0;
@@ -23713,32 +23753,40 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
         height: 3rem;
         width: 8rem;
         padding: 15px;
-        margin-top: 10px;
+        margin-top: 4px;
         font-size: 9px;
+        margin-left: 0;
     }
     .footer ul li {
         font-size: 12px;
         font-weight: 200;
     }
-    .flex_div {
+    .flex_divs {
         display: flex;
+        margin-left: 0;
     }
     body.index-template section.home-product-layout .heading_p {
-        font-size: 14px;
-        padding: 0 0 0 0;
+        font-size: 12px;
+        padding: 3px 15px 0 15px;
     }
     .info ul li img {
-        width: 18px;
+        width: 15px;
     }
     .product-description {
         font-size: 11px;
+        font-size: 8px !important;
+        text-align: left;
+        padding: 0 !important;
+        margin-top: 0px;
     }
     .disscount {
         font-size: 12px;
+        margin-left: 0rem;
     }
     .quantity {
         padding: 0;
         font-size: 13px;
+        text-align: left;
     }
     .row-right {
         text-align: left;
@@ -23792,6 +23840,22 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     .slider_product-card:hover+.hove {
         display: NONE;
+    }
+    .product .product-title a {
+        text-align: left;
+        font-size: 17px;
+        font-weight: 700 !important;
+        line-height: 18px;
+    }
+    .navMobile-navigation .navMobile-logo .header-logo-image {
+        width: 52px;
+    }
+    .story_pera {
+        font-size: 16px;
+    }
+    .price .money {
+        font-size: 119%;
+        margin-left: 0;
     }
 }
 
