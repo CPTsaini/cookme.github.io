@@ -690,6 +690,55 @@ Misc font 2: 'Helvetica Neue'
             }
         }
         
+        @media(max-width:1280px) {
+            .info ul {
+                margin-left: 17rem !important;
+            }
+            .PNG .image2 {
+                left: 104rem !important;
+                top: 247rem !important;
+            }
+            .PNG .image4 {
+                left: 106rem !important;
+                top: 348rem !important;
+            }
+            .PNG .image3 {
+                left: 2rem !important;
+                top: 290rem !important;
+            }
+            .PNG .image5 {
+                left: 7rem !important;
+                top: 381rem !important;
+            }
+            .PNG .image6 {
+                left: 109rem !important;
+                top: 438rem !important;
+            }
+            .PNG .image8 {
+                width: 37rem !important;
+                left: 87rem !important;
+                top: 518rem !important;
+            }
+            .PNG .image9 {
+                left: 6rem !important;
+                top: 560rem !important;
+            }
+            .PNG .image11 {
+                width: 21rem !important;
+                left: 104rem !important;
+                top: 611rem !important;
+            }
+            .PNG .image10 {
+                position: absolute;
+                width: 31rem;
+                left: 0;
+                top: 613rem !important;
+            }
+            .slider_product-card {
+                margin-right: -24px !important;
+            }
+        }
+        
         @media(max-width:1250px) {
             .info ul {
                 margin-left: 17rem !important;
@@ -741,10 +790,10 @@ Misc font 2: 'Helvetica Neue'
                 width: 21rem;
                 left: -1rem;
             }
-            .PNG .image2 {
+            /* .PNG .image2 {
                 left: 86rem !important;
                 top: 227rem !important;
-            }
+            } */
             .PNG .image4 {
                 left: 94rem !important;
                 top: 329rem !important;
@@ -4349,8 +4398,8 @@ Misc font 2: 'Helvetica Neue'
         .PNG .image2 {
             position: absolute;
             width: 24rem;
-            left: 122rem;
-            top: 250rem;
+            left: 84%;
+            top: 356%;
         }
         
         .PNG .image3 {
