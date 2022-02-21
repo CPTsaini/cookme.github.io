@@ -649,6 +649,77 @@ Misc font 2: 'Helvetica Neue'
             flex-wrap: wrap;
         }
         
+        @media(max-width:1400px) {
+            .info ul {
+                margin-left: 25rem;
+            }
+            .PNG .image2 {
+                left: 115rem !important;
+            }
+            .PNG .image4 {
+                left: 120rem !important;
+                top: 353rem !important;
+            }
+            .PNG .image3 {
+                left: 9rem !important;
+                top: 296rem !important;
+            }
+            .PNG .image5 {
+                left: 9rem !important;
+                top: 386rem !important;
+            }
+            .PNG .image6 {
+                left: 119rem !important;
+            }
+            .PNG .image8 {
+                width: 37rem !important;
+                left: 99rem !important;
+                top: 522rem !important;
+            }
+            .PNG .image9 {
+                left: 11rem !important;
+                top: 565rem !important;
+            }
+            .PNG .image11 {
+                width: 21rem !important;
+                left: 118rem !important;
+                top: 618rem !important;
+            }
+            .slider_product-card {
+                margin-right: 18px !important;
+            }
+        }
+        
+        @media(max-width:1250px) {
+            .info ul {
+                margin-left: 20rem;
+            }
+        }
+        
+        @media(max-width:1150px) {
+            .info ul {
+                margin-left: 15rem;
+            }
+        }
+        
+        @media(max-width:1150px) {
+            .info ul {
+                margin-left: 10rem;
+            }
+        }
+        
+        @media(max-width:1010px) {
+            .info ul {
+                margin-left: 5rem;
+            }
+        }
+        
+        @media(max-width:950px) {
+            .info ul {
+                margin-left: 2rem;
+            }
+        }
+        
         .info ul li {
             padding: 20px;
         }
