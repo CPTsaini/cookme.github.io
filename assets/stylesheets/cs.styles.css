@@ -736,6 +736,63 @@ Misc font 2: 'Helvetica Neue'
             .info ul {
                 margin-left: 15rem;
             }
+            .PNG .image1 {
+                position: absolute;
+                width: 21rem;
+                left: -1rem;
+            }
+            .PNG .image2 {
+                left: 86rem !important;
+                top: 227rem !important;
+            }
+            .PNG .image4 {
+                left: 94rem !important;
+                top: 329rem !important;
+            }
+            .PNG .image3 {
+                left: 5rem !important;
+                top: 261rem !important;
+            }
+            .PNG .image5 {
+                left: 6rem !important;
+                top: 348rem !important;
+            }
+            .PNG .image6 {
+                left: 94rem !important;
+                top: 412rem !important;
+            }
+            .PNG .image7 {
+                left: 0rem !important;
+                top: 447rem !important;
+            }
+            .PNG .image8 {
+                width: 37rem !important;
+                left: 78rem !important;
+                top: 490rem !important;
+            }
+            .PNG .image9 {
+                left: 9rem !important;
+                top: 521rem !important;
+            }
+            .PNG .image11 {
+                width: 21rem !important;
+                left: 94rem !important;
+                top: 579rem !important;
+            }
+            .PNG .image10 {
+                top: 580rem !important;
+            }
+            .slider_product-card {
+                margin-right: -52px !important;
+            }
+            .slider_product-image {
+                height: 17rem;
+                width: 17rem;
+            }
+            .slider_product-image img {
+                height: 17rem;
+                width: 17rem;
+            }
         }
         
         @media(max-width:1150px) {
