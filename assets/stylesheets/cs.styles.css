@@ -690,6 +690,53 @@ Misc font 2: 'Helvetica Neue'
             }
         }
         
+        @media(max-width:1366) {}
+        
+        .PNG .image2 {
+            left: 90rem !important;
+        }
+        
+        .PNG .image4 {
+            left: 106rem !important;
+            top: 348rem !important;
+        }
+        
+        .PNG .image3 {
+            left: 9rem !important;
+            top: 296rem !important;
+        }
+        
+        .PNG .image5 {
+            left: 9rem !important;
+            top: 386rem !important;
+        }
+        
+        .PNG .image6 {
+            left: 105rem !important;
+            top: 434rem !important;
+        }
+        
+        .PNG .image8 {
+            width: 37rem !important;
+            left: 87rem !important;
+            top: 518rem !important;
+        }
+        
+        .PNG .image9 {
+            left: 11rem !important;
+            top: 565rem !important;
+        }
+        
+        .PNG .image11 {
+            width: 21rem !important;
+            left: 104rem !important;
+            top: 611rem !important;
+        }
+        
+        .slider_product-card {
+            margin-right: -26px !important;
+        }
+        
         @media(max-width:1280px) {
             .info ul {
                 margin-left: 17rem !important;
@@ -744,7 +791,7 @@ Misc font 2: 'Helvetica Neue'
                 margin-left: 17rem !important;
             }
             .PNG .image2 {
-                left: 101rem !important;
+                left: 90rem !important;
             }
             .PNG .image4 {
                 left: 106rem !important;
