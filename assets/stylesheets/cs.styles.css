@@ -682,7 +682,7 @@ Misc font 2: 'Helvetica Neue'
             }
             .PNG .image11 {
                 width: 21rem !important;
-                left: 112rem !important;
+                left: 116rem !important;
                 top: 616rem !important;
             }
             .slider_product-card {
@@ -23874,7 +23874,7 @@ Misc font 2: 'Helvetica Neue'
                 text-align: center;
             }
             .info ul {
-                margin-left: 0;
+                margin-left: 0 !important;
                 font-size: 11px;
             }
             .info ul li {
@@ -23961,9 +23961,12 @@ Misc font 2: 'Helvetica Neue'
                 padding: 0 0;
             }
             .product-card {
-                margin-right: 0;
-                width: 140px;
-                height: 170px;
+                margin-right: 0px !important;
+                width: 140px !important;
+                height: 170px !important;
+            }
+            .slider_product-container {
+                margin-left: -61px !important;
             }
             .pre-btn,
             .nxt-btn {
@@ -23993,12 +23996,16 @@ Misc font 2: 'Helvetica Neue'
                 height: 9.5rem;
                 width: 10rem;
             }
+            .slider_product-image img {
+                height: 9.5rem !important;
+                width: 10rem !important;
+            }
             .slider_product-brand {
                 font-size: 20px;
             }
             .slider_product-card {
                 width: 83px;
-                margin-left: 5px;
+                margin-left: 82px !important;
                 height: 195px;
             }
             body.index-template section.home-product-layout .home-product-content {
