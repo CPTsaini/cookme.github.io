@@ -692,51 +692,6 @@ Misc font 2: 'Helvetica Neue'
         
         @media(max-width:1366) {}
         
-        .PNG .image2 {
-            left: 90rem !important;
-        }
-        
-        .PNG .image4 {
-            left: 106rem !important;
-            top: 348rem !important;
-        }
-        
-        .PNG .image3 {
-            left: 9rem !important;
-            top: 296rem !important;
-        }
-        
-        .PNG .image5 {
-            left: 9rem !important;
-            top: 386rem !important;
-        }
-        
-        .PNG .image6 {
-            left: 105rem !important;
-            top: 434rem !important;
-        }
-        
-        .PNG .image8 {
-            width: 37rem !important;
-            left: 87rem !important;
-            top: 518rem !important;
-        }
-        
-        .PNG .image9 {
-            left: 11rem !important;
-            top: 565rem !important;
-        }
-        
-        .PNG .image11 {
-            width: 21rem !important;
-            left: 104rem !important;
-            top: 611rem !important;
-        }
-        
-        .slider_product-card {
-            margin-right: -26px !important;
-        }
-        
         @media(max-width:1280px) {
             .info ul {
                 margin-left: 17rem !important;
@@ -21426,10 +21381,13 @@ Misc font 2: 'Helvetica Neue'
         footer section.footer-information-block .footer-information-content {
             position: relative;
             padding-bottom: 60px;
-            margin-left: -15px;
+            margin-left: 100px;
             margin-right: -15px;
             *zoom: 1
         }
+        /* .flex_divs {
+            padding-left: 5rem !important;
+        } */
         
         footer section.footer-information-block .footer-information-content::after {
             content: '';
@@ -21461,7 +21419,7 @@ Misc font 2: 'Helvetica Neue'
             color: red;
             background-color: white;
             border-radius: 50%;
-            padding: 5px;
+            padding: 8px 8px 5px 8px;
             margin: 5px;
         }
         
