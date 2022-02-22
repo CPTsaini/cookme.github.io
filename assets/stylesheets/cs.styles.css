@@ -24136,6 +24136,9 @@ Misc font 2: 'Helvetica Neue'
                 margin-top: 5px;
                 margin: 5px -2px 0 -5px
             }
+		 .about-content {
+            margin-left: -10rem;
+        }
         }
         
         .ajax-cart-loading {
