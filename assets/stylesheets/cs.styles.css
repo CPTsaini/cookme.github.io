@@ -644,13 +644,17 @@ Misc font 2: 'Helvetica Neue'
     
     .info {
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .info ul {
         list-style: none;
-        display: flex;
-        margin-left: 31rem;
+        display: flex;        
         flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
     }
     
     @media(max-width:1400px) {
