@@ -21148,6 +21148,11 @@ Misc font 2: 'Helvetica Neue'
             margin-top: -19% !important;
         }
     }
+  @media (max-width:1390px) {
+        header.affix {
+            margin-top: -21% !important;
+        }
+    }
     
     @media only screen and (min-width: 1200px) {
         header.affix+.fix-sticky {
