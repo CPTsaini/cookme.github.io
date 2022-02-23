@@ -3431,8 +3431,6 @@ Misc font 2: 'Helvetica Neue'
         align-items: flex-start
     }
     
-    .buttn {}
-    
     .buttn button {
         border: 2px solid #9D1414 !important;
         background-color: transparent;
@@ -21148,7 +21146,8 @@ Misc font 2: 'Helvetica Neue'
             margin-top: -19% !important;
         }
     }
-  @media (max-width:1390px) {
+    
+    @media (max-width:1390px) {
         header.affix {
             margin-top: -21% !important;
         }
@@ -23681,6 +23680,23 @@ Misc font 2: 'Helvetica Neue'
         border-top: 1px solid #dbcebd;
         background-color: #f3e8dd;
         z-index: 10
+    }
+    
+    .subs form input {
+        height: 3rem;
+        width: auto;
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .subs form .subsbtn {
+        background-color: #dbb9b1 !important;
+        color: #9c1919 !important;
+        padding: 2px;
+        margin-top: .5rem !important;
     }
     
     @media only screen and (min-width: 992px) {
