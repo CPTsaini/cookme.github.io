@@ -694,8 +694,6 @@ Misc font 2: 'Helvetica Neue'
             margin-left: -10rem;
         }
         
-        @media(max-width:1366) {}
-        
         @media(max-width:1280px) {
             .info ul {
                 margin-left: 17rem !important;
@@ -738,7 +736,7 @@ Misc font 2: 'Helvetica Neue'
                 position: absolute;
                 width: 31rem;
                 left: 0;
-                top: 613rem !im;
+                top: 613rem !important;
             }
             .slider_product-card {
                 margin-right: -24px !important;
@@ -4411,8 +4409,8 @@ Misc font 2: 'Helvetica Neue'
         .PNG .image3 {
             position: absolute;
             width: 17rem;
-            left: 13rem;
-            top: 298rem;
+            left: 11rem;
+            top: 293rem;
         }
         
         .PNG .image4 {
@@ -4425,8 +4423,8 @@ Misc font 2: 'Helvetica Neue'
         .PNG .image5 {
             position: absolute;
             width: 16rem;
-            left: 15rem;
-            top: 389rem;
+            left: 13rem;
+            top: 385rem;
         }
         
         .PNG .image6 {
@@ -4453,8 +4451,8 @@ Misc font 2: 'Helvetica Neue'
         .PNG .image9 {
             position: absolute;
             width: 13rem;
-            left: 17rem;
-            top: 568rem;
+            left: 11rem;
+            top: 564rem;
         }
         
         .PNG .image10 {
@@ -24136,9 +24134,16 @@ Misc font 2: 'Helvetica Neue'
                 margin-top: 5px;
                 margin: 5px -2px 0 -5px
             }
-		 .about-content {
-            margin-left: 1rem;
+            .about-content {
+                margin-left: 1rem;
+            }
         }
+        
+        @media(max-width:1420) {
+            .PNG .image3 {
+                left: 11rem !important;
+                top: 293rem !important;
+            }
         }
         
         .ajax-cart-loading {
