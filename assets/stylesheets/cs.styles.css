@@ -1891,7 +1891,8 @@ Misc font 2: 'Helvetica Neue'
         font-family: Josefin Sans;
         background-repeat: repeat;
         background-position: 0px 0;
-        background-size: inherit
+        background-size: inherit;
+        overflow-x: hidden;
     }
     
     body .label--hidden {
@@ -4264,8 +4265,8 @@ Misc font 2: 'Helvetica Neue'
     .PNG .image4 {
         position: absolute;
         width: 19rem;
-        left: 129rem;
-        top: 355rem;
+        left: 119rem;
+        top: 71rem;
     }
     
     .PNG .image5 {
