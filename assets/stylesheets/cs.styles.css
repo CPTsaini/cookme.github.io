@@ -7817,14 +7817,14 @@ body .compare-model .modal-body .modal-note * {
 }
 
 .product.product-circle .row-left>a {
-    border-radius: 50%
+    /* border-radius: 50% */
 }
 
 .product.product-circle .row-left:hover>a {
-    -moz-animation: moverAround 9s both infinite;
+    /* -moz-animation: moverAround 9s both infinite;
     -o-animation: moverAround 9s both infinite;
     -webkit-animation: moverAround 9s both infinite;
-    animation: moverAround 9s both infinite
+    animation: moverAround 9s both infinite */
 }
 
 .product.product-circle .hoverBorderWrapper {
@@ -7837,7 +7837,7 @@ body .compare-model .modal-body .modal-note * {
 
 .product.product-circle .hoverBorderWrapper img,
 .product.product-circle .hoverBorderWrapper .mask {
-    border-radius: 50%
+    /* border-radius: 50% */
 }
 
 @media only screen and (max-width: 767px) {
