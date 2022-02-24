@@ -21327,10 +21327,12 @@ footer section.footer-information-block .footer-information-content>div {
 
 .blog-group {
     margin-left: 18rem;
+    padding-left: 9rem;
 }
 
 .social-payment-item {
     margin-left: -10rem;
+    padding-left: 13rem;
 }
 
 .social-icons a {
@@ -24036,9 +24038,11 @@ body .compare-model .modal-body .modal-body-inner .modal-right form .form-right 
     }
     .blog-group {
         margin-left: 2rem;
+        padding-left: 0;
     }
     .social-payment-item {
         margin-left: 0;
+        padding-left: 0;
     }
     .slider_product-card:hover+.hove {
         display: NONE;
